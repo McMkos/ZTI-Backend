@@ -2,14 +2,54 @@ GET  http://localhost:3000/subscribers
 
 ###
 
-GET  http://localhost:3000/subscribers/6
-
+GET  http://localhost:3000/subscribers/64654124e1f54e4af31b9a56
 ###
 
 POST  http://localhost:3000/subscribers
 Content-Type: application/json
 
 {
-    "name": "Adam",
-    "subscribedToChannel": "Adbuster"
+    "name": "Chuj",
+    "subscribedToChannel": "Złamany"
 }
+
+###
+
+DELETE http://localhost:3000/subscribers/64654124e1f54e4af31b9a56
+
+###
+
+PATCH http://localhost:3000/subscribers/64693d0788f762ba06818563
+Content-Type: application/json
+
+{
+    "name": "[OCENZUROWANO]",
+    "subscribedToChannel": "[BRAK]"
+}
+
+###
+
+POST  http://localhost:3000/users
+Content-Type: application/json
+
+{
+    "name": "Admin",
+    "email": "admin@gmail.com",
+    "password": "123"
+}
+
+###
+
+POST  http://localhost:3000/users/login
+Content-Type: application/json
+
+{
+    "name": "Janusz",
+    "password": "123"
+}
+
+###
+
+GET  http://localhost:3000/users
+
+###
